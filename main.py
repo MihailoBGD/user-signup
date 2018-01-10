@@ -41,7 +41,7 @@ def index():
             return render_template('welcome.html',username=username)
 
         return render_template('signup_form.html', username_error = username_error, 
-        errorpass = password_error, verr_orify = verify_error, err_mail = email_error)
+        errorpass = password_error, verr_orify = verify_error, err_mail = email_error, username = username)
 
     return render_template('signup_form.html')
 
